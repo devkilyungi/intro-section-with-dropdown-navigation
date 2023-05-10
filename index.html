@@ -12,22 +12,73 @@
       href="./images/favicon-32x32.png"
     />
 
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css" />
     <script src="./js/app.js" defer></script>
-    
+
     <title>Frontend Mentor | Intro section with dropdown navigation</title>
   </head>
   <body>
     <header>
-      <nav>
-        <div class="left-nav">
-          <div class="logo"></div>
-        </div>
-        <div class="right-nav">
-          <a href="#">Login</a>
-          <button class="button">Register</button>
-        </div>
-      </nav>
+      <div class="left-side">
+        <img src="./images/logo.svg" alt="logo" id="logo" />
+        <ul class="navbar">
+          <li class="navbar-item" id="first-dropdown">
+            <a href="#Features">
+              Features
+              <img src="./images/icon-arrow-down.svg" alt="arrow down icon" />
+            </a>
+            <ul class="dropdown" id="first-dropdown-content">
+              <li class="dropdown-item">
+                <a href="#Todo-List">
+                  <img src="./images/icon-todo.svg" alt="todo list icon" />Todo
+                  List
+                </a>
+              </li>
+              <li class="dropdown-item">
+                <a href="#Calendar">
+                  <img src="./images/icon-calendar.svg" alt="todo list icon" />
+                  Calendar
+                </a>
+              </li>
+              <li class="dropdown-item">
+                <a href="#Reminders">
+                  <img src="./images/icon-reminders.svg" alt="todo list icon" />
+                  Reminders
+                </a>
+              </li>
+              <li class="dropdown-item">
+                <a href="#Planning">
+                  <img src="./images/icon-planning.svg" alt="todo list icon" />
+                  Planning
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="navbar-item" id="second-dropdown">
+            <a href="#Company">
+              Company
+              <img src="./images/icon-arrow-down.svg" alt="arrow down icon" />
+            </a>
+            <ul class="dropdown"  id="second-dropdown-content">
+              <li class="dropdown-item">
+                <a href="#History"> History </a>
+              </li>
+              <li class="dropdown-item">
+                <a href="#Our-Team"> Our Team </a>
+              </li>
+              <li class="dropdown-item">
+                <a href="#Blog"> Blog </a>
+              </li>
+            </ul>
+          </li>
+          <li class="navbar-item"><a href="#Careers">Careers</a></li>
+          <li class="navbar-item"><a href="#About">About</a></li>
+        </ul>
+      </div>
+      <div class="right-side">
+        <a href="#">Login</a>
+        <button class="header-btn">Register</button>
+      </div>
     </header>
 
     <main>
@@ -37,12 +88,13 @@
       </div>
       <div class="right-side"></div>
     </main>
-    Features Company Careers About Login Register Make remote work Get your team
-    in sync, no matter your location. Streamline processes, create team rituals,
-    and watch productivity soar. Learn more
+    
 
     <footer>
       <div class="attribution">
+        Features Company Careers About Login Register Make remote work Get your team
+    in sync, no matter your location. Streamline processes, create team rituals,
+    and watch productivity soar. Learn more
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a

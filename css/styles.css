@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap");
 *,
 *::before,
 *::after {
@@ -65,4 +66,119 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  width: 100vw;
+  background-color: hsl(0, 0%, 98%);
+}
+body header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4%;
+}
+body header .left-side {
+  display: flex;
+  align-items: center;
+}
+body header .left-side #logo {
+  height: 1.5em;
+  margin: 0 3.5em -0.95em 0;
+}
+body header .left-side .navbar {
+  font-weight: 400;
+  position: relative;
+}
+body header .left-side .navbar .navbar-item {
+  display: inline-block;
+  list-style: none;
+  padding: 0 1em;
+}
+body header .left-side .navbar .navbar-item a {
+  text-decoration: none;
+  color: hsl(0, 0%, 41%);
+  display: flex;
+  align-items: center;
+  gap: 0.25em;
+  font-size: 0.85em;
+  transition: all 0.5s ease;
+}
+body header .left-side .navbar .navbar-item a img {
+  height: 0.4em;
+}
+body header .left-side .navbar .navbar-item a:hover {
+  color: hsl(0, 0%, 8%);
+}
+body header .left-side .navbar .navbar-item .dropdown {
+  display: none;
+  position: absolute;
+  top: 40px;
+  padding: 0.75em 1em;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 1px 1px 25px hsl(0, 3%, 73%);
+  transition: top 2s ease;
+}
+body header .left-side .navbar .navbar-item .dropdown .dropdown-item {
+  list-style: none;
+  margin: 8px 0;
+}
+body header .left-side .navbar .navbar-item .dropdown .dropdown-item a {
+  text-decoration: none;
+  color: hsl(0, 0%, 41%);
+  text-align: start;
+}
+body header .left-side .navbar .navbar-item .dropdown .dropdown-item a img {
+  height: 0.9em;
+  margin-right: 0.5em;
+}
+body header .left-side .navbar .navbar-item .dropdown .dropdown-item a:hover {
+  color: hsl(0, 0%, 8%);
+}
+body header .left-side .navbar .navbar-item .show-dropdown {
+  display: block;
+}
+body header .left-side .navbar .navbar-item #first-dropdown-content {
+  left: -35px;
+}
+body header .right-side {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+body header .right-side a {
+  text-decoration: none;
+  color: hsl(0, 0%, 41%);
+}
+body header .right-side a:hover {
+  color: hsl(0, 0%, 8%);
+}
+body header .right-side .header-btn {
+  outline: none;
+  background-color: transparent;
+  border: 1px solid hsl(0, 0%, 41%);
+  color: hsl(0, 0%, 41%);
+  padding: 0.5em 1em;
+  border-radius: 1em;
+  cursor: pointer;
+}
+body header .right-side .header-btn:hover {
+  color: hsl(0, 0%, 8%);
+  border: 1px solid hsl(0, 0%, 8%);
+}
+body .attribution {
+  display: none;
+  font-size: 11px;
+  text-align: center;
+}
+body .attribution a {
+  color: hsl(228, 45%, 44%);
 }/*# sourceMappingURL=styles.css.map */
