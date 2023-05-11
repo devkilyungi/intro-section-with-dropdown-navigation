@@ -1,6 +1,6 @@
 @import "./reset";
 @import "./constants";
-@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;700&family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;700&family=Poppins:ital,wght@0,700;1,400;1,800&display=swap");
 
 body {
   height: 100vh;
@@ -8,6 +8,22 @@ body {
   background-color: $almost-white;
   font-family: "Poppins", sans-serif;
   position: relative;
+  @include flex-center;
+
+  .btn {
+    outline: none;
+    background-color: transparent;
+    border: 1px solid $medium-gray;
+    color: $medium-gray;
+    padding: 0.5em 1em;
+    border-radius: .75em;
+    cursor: pointer;
+
+    &:hover {
+      color: $almost-black;
+      border: 1px solid $almost-black;
+    }
+  }
 
   header {
     @include flex-center;
@@ -41,11 +57,11 @@ body {
             color: $medium-gray;
             gap: 0.25em;
             font-size: 0.85em;
-            transition: all .5s ease-in-out;
+            transition: all 0.5s ease-in-out;
 
             img {
               height: 0.4em;
-              transition: all .5s ease-in-out;
+              transition: all 0.5s ease-in-out;
             }
 
             &:hover {
@@ -106,21 +122,78 @@ body {
           color: $almost-black;
         }
       }
+    }
+  }
 
-      .header-btn {
-        outline: none;
-        background-color: transparent;
-        border: 1px solid $medium-gray;
-        color: $medium-gray;
-        padding: 0.5em 1em;
-        border-radius: 1em;
-        cursor: pointer;
-        
-        &:hover {
-          color: $almost-black;
-          border: 1px solid $almost-black;          
+  main {
+    height: 70vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: minmax(400px,auto) minmax(400px,auto);
+    place-items: center;
+
+    .left-side {
+      position: relative;
+      right: -75px;
+      top: 30px;
+      width: 40vw;
+      height: 90%;
+
+      .left-side-content {
+        height: 85%;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        h1 {
+          font-size: 4.5em;
+          line-height: 1em;
+          letter-spacing: 2px;
+          width: 82%;
+        }
+
+        p {
+          font-size: 1em;
+          color: $medium-gray;
+          letter-spacing: .5px;
+          width: 75%;
         }
       }
+
+      .left-side-footer{
+        height: 15%;
+        display: flex;
+        align-items: flex-end;
+
+        img{
+          margin-right: 3em;
+        }
+
+        #one {
+          height: 1em;
+        }
+
+        #two {
+          height: 1.75em;
+          position: relative;
+          top: 7px;
+        }
+
+        #three {
+          height: 1em;
+        }
+
+        #four {
+          height: 1.3em;
+        }
+      }
+    }
+
+    .right-side {
+      width: 400px;
+      position: relative;
+      left: -80px;
     }
   }
 
@@ -130,12 +203,12 @@ body {
     left: 50%;
     transform: translateX(-50%);
     margin: 0 auto;
-    font-size: .85em;
+    font-size: 0.85em;
     text-align: center;
-    
+
     a {
       color: hsl(228, 45%, 44%);
-      font-size: .95em;
+      font-size: 0.95em;
     }
   }
 }

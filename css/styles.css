@@ -74,6 +74,21 @@ body {
   background-color: hsl(0, 0%, 98%);
   font-family: "Poppins", sans-serif;
   position: relative;
+  display: flex;
+  align-items: center;
+}
+body .btn {
+  outline: none;
+  background-color: transparent;
+  border: 1px solid hsl(0, 0%, 41%);
+  color: hsl(0, 0%, 41%);
+  padding: 0.5em 1em;
+  border-radius: 0.75em;
+  cursor: pointer;
+}
+body .btn:hover {
+  color: hsl(0, 0%, 8%);
+  border: 1px solid hsl(0, 0%, 8%);
 }
 body header {
   display: flex;
@@ -161,18 +176,65 @@ body header .right-side a {
 body header .right-side a:hover {
   color: hsl(0, 0%, 8%);
 }
-body header .right-side .header-btn {
-  outline: none;
-  background-color: transparent;
-  border: 1px solid hsl(0, 0%, 41%);
-  color: hsl(0, 0%, 41%);
-  padding: 0.5em 1em;
-  border-radius: 1em;
-  cursor: pointer;
+body main {
+  height: 70vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: minmax(400px, auto) minmax(400px, auto);
+  place-items: center;
 }
-body header .right-side .header-btn:hover {
-  color: hsl(0, 0%, 8%);
-  border: 1px solid hsl(0, 0%, 8%);
+body main .left-side {
+  position: relative;
+  right: -75px;
+  top: 30px;
+  width: 40vw;
+  height: 90%;
+}
+body main .left-side .left-side-content {
+  height: 85%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+body main .left-side .left-side-content h1 {
+  font-size: 4.5em;
+  line-height: 1em;
+  letter-spacing: 2px;
+  width: 82%;
+}
+body main .left-side .left-side-content p {
+  font-size: 1em;
+  color: hsl(0, 0%, 41%);
+  letter-spacing: 0.5px;
+  width: 75%;
+}
+body main .left-side .left-side-footer {
+  height: 15%;
+  display: flex;
+  align-items: flex-end;
+}
+body main .left-side .left-side-footer img {
+  margin-right: 3em;
+}
+body main .left-side .left-side-footer #one {
+  height: 1em;
+}
+body main .left-side .left-side-footer #two {
+  height: 1.75em;
+  position: relative;
+  top: 7px;
+}
+body main .left-side .left-side-footer #three {
+  height: 1em;
+}
+body main .left-side .left-side-footer #four {
+  height: 1.3em;
+}
+body main .right-side {
+  width: 400px;
+  position: relative;
+  left: -80px;
 }
 body .attribution {
   position: absolute;
