@@ -168,6 +168,17 @@ body {
           letter-spacing: 0.5px;
           width: 75%;
         }
+
+        button{
+          background-color: $almost-black;
+          color: $almost-white;
+          transition: all .2s ease-in-out;
+          
+          &:hover{
+            background-color: $almost-white;
+            color: $almost-black;
+          }
+        }
       }
 
       .left-side-footer {

@@ -216,6 +216,15 @@ body main .left-side .left-side-content p {
   letter-spacing: 0.5px;
   width: 75%;
 }
+body main .left-side .left-side-content button {
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 98%);
+  transition: all 0.2s ease-in-out;
+}
+body main .left-side .left-side-content button:hover {
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(0, 0%, 8%);
+}
 body main .left-side .left-side-footer {
   height: 15%;
   display: flex;
