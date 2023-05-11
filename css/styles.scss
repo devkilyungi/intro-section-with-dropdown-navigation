@@ -1,27 +1,26 @@
 @import "./reset";
 @import "./constants";
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;700&family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
 
 body {
-  font-family: "Poppins", sans-serif;
   height: 100vh;
   width: 100vw;
   background-color: $almost-white;
+  font-family: "Poppins", sans-serif;
+  position: relative;
 
   header {
+    @include flex-center;
+    justify-content: space-between;
     position: fixed;
     top: 0;
     left: 0;
     height: 10vh;
     width: 100vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 0 4%;
 
     .left-side {
-      display: flex;
-      align-items: center;
+      @include flex-center;
 
       #logo {
         height: 1.5em;
@@ -29,7 +28,6 @@ body {
       }
 
       .navbar {
-        font-weight: 400;
         position: relative;
 
         .navbar-item {
@@ -38,16 +36,16 @@ body {
           padding: 0 1em;
 
           a {
+            @include flex-center;
             text-decoration: none;
             color: $medium-gray;
-            display: flex;
-            align-items: center;
             gap: 0.25em;
             font-size: 0.85em;
-            transition: all 0.5s ease;
+            transition: all .5s ease-in-out;
 
             img {
               height: 0.4em;
+              transition: all .5s ease-in-out;
             }
 
             &:hover {
@@ -63,7 +61,6 @@ body {
             border-radius: 10px;
             background-color: white;
             box-shadow: 1px 1px 25px hsl(0, 3%, 73%);
-            transition: top 2s ease;
 
             .dropdown-item {
               list-style: none;
@@ -98,8 +95,7 @@ body {
     }
 
     .right-side {
-      display: flex;
-      align-items: center;
+      @include flex-center;
       gap: 2em;
 
       a {
@@ -122,20 +118,24 @@ body {
         
         &:hover {
           color: $almost-black;
-          border: 1px solid $almost-black;
-          
+          border: 1px solid $almost-black;          
         }
       }
     }
   }
 
   .attribution {
-    display: none;
-    font-size: 11px;
+    position: absolute;
+    bottom: 5vh;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 auto;
+    font-size: .85em;
     text-align: center;
-
+    
     a {
       color: hsl(228, 45%, 44%);
+      font-size: .95em;
     }
   }
 }

@@ -7,3 +7,7 @@ $almost-black: hsl(0, 0%, 8%);
 $medium-gray: hsl(0, 0%, 41%);
 
 // mixins (reusable component styles)
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+}

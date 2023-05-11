@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;700&family=Poppins:ital,wght@0,700;1,400;1,800&display=swap");
 *,
 *::before,
 *::after {
@@ -69,20 +69,21 @@ input[type=number] {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
   height: 100vh;
   width: 100vw;
   background-color: hsl(0, 0%, 98%);
+  font-family: "Poppins", sans-serif;
+  position: relative;
 }
 body header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   position: fixed;
   top: 0;
   left: 0;
   height: 10vh;
   width: 100vw;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 0 4%;
 }
 body header .left-side {
@@ -94,7 +95,6 @@ body header .left-side #logo {
   margin: 0 3.5em -0.95em 0;
 }
 body header .left-side .navbar {
-  font-weight: 400;
   position: relative;
 }
 body header .left-side .navbar .navbar-item {
@@ -103,16 +103,17 @@ body header .left-side .navbar .navbar-item {
   padding: 0 1em;
 }
 body header .left-side .navbar .navbar-item a {
-  text-decoration: none;
-  color: hsl(0, 0%, 41%);
   display: flex;
   align-items: center;
+  text-decoration: none;
+  color: hsl(0, 0%, 41%);
   gap: 0.25em;
   font-size: 0.85em;
-  transition: all 0.5s ease;
+  transition: all 0.5s ease-in-out;
 }
 body header .left-side .navbar .navbar-item a img {
   height: 0.4em;
+  transition: all 0.5s ease-in-out;
 }
 body header .left-side .navbar .navbar-item a:hover {
   color: hsl(0, 0%, 8%);
@@ -125,7 +126,6 @@ body header .left-side .navbar .navbar-item .dropdown {
   border-radius: 10px;
   background-color: white;
   box-shadow: 1px 1px 25px hsl(0, 3%, 73%);
-  transition: top 2s ease;
 }
 body header .left-side .navbar .navbar-item .dropdown .dropdown-item {
   list-style: none;
@@ -175,10 +175,15 @@ body header .right-side .header-btn:hover {
   border: 1px solid hsl(0, 0%, 8%);
 }
 body .attribution {
-  display: none;
-  font-size: 11px;
+  position: absolute;
+  bottom: 5vh;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0 auto;
+  font-size: 0.85em;
   text-align: center;
 }
 body .attribution a {
   color: hsl(228, 45%, 44%);
+  font-size: 0.95em;
 }/*# sourceMappingURL=styles.css.map */
