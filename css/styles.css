@@ -176,9 +176,16 @@ body header .right-side a {
 body header .right-side a:hover {
   color: hsl(0, 0%, 8%);
 }
+body header .right-side #menu {
+  display: none;
+}
+body header .side-menu {
+  display: none;
+}
 body main {
   height: 70vh;
-  width: 100%;
+  width: 85%;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: minmax(400px, auto) minmax(400px, auto);
   place-items: center;
@@ -187,7 +194,7 @@ body main .left-side {
   position: relative;
   right: -75px;
   top: 30px;
-  width: 40vw;
+  width: 600px;
   height: 90%;
 }
 body main .left-side .left-side-content {
@@ -232,9 +239,7 @@ body main .left-side .left-side-footer #four {
   height: 1.3em;
 }
 body main .right-side {
-  width: 400px;
-  position: relative;
-  left: -80px;
+  width: 25vw;
 }
 body .attribution {
   position: absolute;
@@ -248,4 +253,64 @@ body .attribution {
 body .attribution a {
   color: hsl(228, 45%, 44%);
   font-size: 0.95em;
+}
+
+@media only screen and (max-width: 1200px) {
+  body main .left-side {
+    width: 380px;
+    height: 75%;
+  }
+  body main .left-side .left-side-content h1 {
+    font-size: 2.75em;
+  }
+  body main .left-side .left-side-content p {
+    font-size: 0.8em;
+  }
+  body main .left-side .left-side-footer img {
+    margin-right: 1em;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  body main .left-side {
+    width: 320px;
+    height: 65%;
+  }
+  body main .left-side .left-side-content h1 {
+    font-size: 2.3em;
+  }
+  body main .left-side .left-side-content p {
+    font-size: 0.8em;
+  }
+  body main .left-side .left-side-footer img {
+    margin-right: 1em;
+  }
+  body main .left-side .left-side-footer #one {
+    height: 0.85em;
+  }
+  body main .left-side .left-side-footer #two {
+    height: 1.45em;
+    position: relative;
+    top: 7px;
+  }
+  body main .left-side .left-side-footer #three {
+    height: 0.85em;
+  }
+  body main .left-side .left-side-footer #four {
+    height: 1.1em;
+  }
+}
+@media only screen and (max-width: 992px) {
+  body header .left-side {
+    position: relative;
+  }
+  body header .left-side .navbar {
+    display: none;
+  }
+  body header .right-side a, body header .right-side button {
+    display: none;
+  }
+  body header .right-side #menu {
+    display: block;
+    cursor: pointer;
+  }
 }/*# sourceMappingURL=styles.css.map */
