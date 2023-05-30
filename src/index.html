@@ -17,10 +17,121 @@
 
     <title>Frontend Mentor | Intro section with dropdown navigation</title>
   </head>
-  <body>
-    <div>
-      <p></p>
-    </div>
-    
+  <body class="bg-gray-50">
+    <header class="p-7">
+      <nav class="flex justify-between font-semibold">
+        <!-- left side of nav -->
+        <div class="inline-flex">
+          <!-- logo -->
+          <a href="#" class="ml-3 mr-10"
+            ><img src="../public/images/logo.svg" alt="logo"
+          /></a>
+
+          <!-- main nav -->
+          <ul class="flex justify-around">
+            <li class="-mr-5 group/features">
+              <!-- nav title -->
+              <div
+                class="flex items-center space-x-1.5 text-gray-600 hover:text-black"
+              >
+                <a href="#">Features</a>
+                <img
+                  src="../public/images/icon-arrow-down.svg"
+                  alt="arrow down icon"
+                  class="mt-1 h-1.5"
+                />
+              </div>
+
+              <!-- nav dropdown -->
+              <ul
+                class="relative right-16 mt-2 flex-col space-y-1.5 rounded-lg bg-white p-5 shadow-2xl
+                invisible group-hover/features:visible"
+              >
+                <li class="flex items-center text-gray-600 hover:text-black">
+                  <img
+                    src="../public/images/icon-todo.svg"
+                    alt="arrow down icon"
+                    class="mr-3.5"
+                  />
+                  <a href="#">Todo List</a>
+                </li>
+                <li class="flex items-center text-gray-600 hover:text-black">
+                  <img
+                    src="../public/images/icon-calendar.svg"
+                    alt="arrow down icon"
+                    class="mr-3"
+                  />
+                  <a href="#">Calendar</a>
+                </li>
+                <li
+                  class="flex items-center space-x-2 text-gray-600 hover:text-black"
+                >
+                  <img
+                    src="../public/images/icon-reminders.svg"
+                    alt="arrow down icon"
+                    class="mr-2"
+                  />
+                  <a href="#">Reminders</a>
+                </li>
+                <li class="flex items-center text-gray-600 hover:text-black">
+                  <img
+                    src="../public/images/icon-planning.svg"
+                    alt="arrow down icon"
+                    class="mr-3.5"
+                  />
+                  <a href="#">Planning</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="mr-4 group/company ">
+              <!-- nav title -->
+              <div
+                class="flex items-center space-x-1.5 text-gray-600 hover:text-black"
+              >
+                <a href="#">Company</a>
+                <img
+                  src="../public/images/icon-arrow-down.svg" 
+                  alt="arrow down icon"
+                />
+              </div>
+
+              <!-- nav dropdown -->
+              <ul
+                class="mt-2 flex-col space-y-1.5 rounded-lg bg-white p-5 shadow-2xl invisible group-hover/company:visible"
+              >
+                <li class="text-gray-600 hover:text-black">
+                  <a href="#">History</a>
+                </li>
+                <li class="text-gray-600 hover:text-black">
+                  <a href="#">Our Team</a>
+                </li>
+                <li class="text-gray-600 hover:text-black">
+                  <a href="#">Blog</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="text-gray-600 hover:text-black mr-5">
+              <a href="#">Careers</a>
+            </li>
+
+            <li class="text-gray-600 hover:text-black ml-5">
+              <a href="#">About</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- right side of nav -->
+        <div class="flex-row">
+          <a href="#" class="mx-5 text-gray-600 hover:text-black">Login</a>
+          <button
+            class="mx-5 rounded-2xl border border-gray-600 px-5 py-2 text-gray-600 hover:border-black hover:text-black"
+          >
+            Register
+          </button>
+        </div>
+      </nav>
+    </header>
   </body>
 </html>
