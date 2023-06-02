@@ -29,7 +29,7 @@
 
           <!-- main nav -->
           <ul class="flex justify-around">
-            <li class="-mr-5 group/features">
+            <li class="group/features -mr-5">
               <!-- nav title -->
               <div
                 class="flex items-center space-x-1.5 text-gray-600 hover:text-black"
@@ -44,8 +44,7 @@
 
               <!-- nav dropdown -->
               <ul
-                class="relative right-16 mt-2 flex-col space-y-1.5 rounded-lg bg-white p-5 shadow-2xl
-                invisible group-hover/features:visible"
+                class="invisible relative right-16 mt-2 flex-col space-y-1.5 rounded-lg bg-white p-5 shadow-2xl group-hover/features:visible"
               >
                 <li class="flex items-center text-gray-600 hover:text-black">
                   <img
@@ -84,21 +83,21 @@
               </ul>
             </li>
 
-            <li class="mr-4 group/company ">
+            <li class="group/company mr-4">
               <!-- nav title -->
               <div
                 class="flex items-center space-x-1.5 text-gray-600 hover:text-black"
               >
                 <a href="#">Company</a>
                 <img
-                  src="../public/images/icon-arrow-down.svg" 
+                  src="../public/images/icon-arrow-down.svg"
                   alt="arrow down icon"
                 />
               </div>
 
               <!-- nav dropdown -->
               <ul
-                class="mt-2 flex-col space-y-1.5 rounded-lg bg-white p-5 shadow-2xl invisible group-hover/company:visible"
+                class="invisible mt-2 flex-col space-y-1.5 rounded-lg bg-white p-5 shadow-2xl group-hover/company:visible"
               >
                 <li class="text-gray-600 hover:text-black">
                   <a href="#">History</a>
@@ -112,11 +111,11 @@
               </ul>
             </li>
 
-            <li class="text-gray-600 hover:text-black mr-5">
+            <li class="mr-5 text-gray-600 hover:text-black">
               <a href="#">Careers</a>
             </li>
 
-            <li class="text-gray-600 hover:text-black ml-5">
+            <li class="ml-5 text-gray-600 hover:text-black">
               <a href="#">About</a>
             </li>
           </ul>
@@ -133,5 +132,46 @@
         </div>
       </nav>
     </header>
+
+    <main class="flex items-center mx-44 mt-0">
+      <div>
+        <!-- left side content -->
+        <div>
+          <!-- main -->
+          <h1 class="text-7xl font-bold text-gray-800">
+            Make 
+          </h1>
+          <h2 class="text-7xl font-bold text-gray-800">remote work.</h2>
+          <p class="my-14 text-xl text-gray-600 pr-44">
+            Get your team in sync, no matter your location. 
+            Streamline processes, create team rituals, and 
+            watch productivity soar.
+          </p>
+          <button
+            class="mb-24 rounded-2xl border border-transparent bg-black text-gray-100 px-5 py-2 hover:border-black hover:bg-gray-50 hover:text-black"
+          >
+            Learn more
+          </button>
+        </div>
+
+        <div class="grid grid-cols-5 gap-1">
+          <!-- footer -->
+          <img src="../public/images/client-databiz.svg" alt="client-databiz logo">
+          <img src="../public/images/client-audiophile.svg" alt="client-audiophile logo">
+          <img src="../public/images/client-meet.svg" alt="client-meet logo">
+          <img src="../public/images/client-maker.svg" alt="client-maker logo">
+        </div>
+        
+      </div>
+
+      <div>
+        <!-- right side content -->
+        <img
+          class="w-9/12"
+          src="../public/images/image-hero-desktop.png"
+          alt="man holding a laptop"
+        />
+      </div>
+    </main>
   </body>
 </html>
